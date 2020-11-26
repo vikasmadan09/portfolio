@@ -1,0 +1,20 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+
+.jumbotron{
+    max-height: 200px;
+}
+.disp-img{
+    top: -52px;
+    right: 0px;
+    height: 175px;
+}
+
+.header-list{
+    li{
+        white-space: nowrap;
+    }
+    svg{
+        margin: 0 5px 0 -10px;
+    }
+}
