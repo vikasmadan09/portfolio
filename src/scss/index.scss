@@ -94,7 +94,7 @@ ul li {
       color: var(--text);
     }
     .grad-info {
-      line-height: 0.5rem;
+      line-height: 1rem;
     }
     .skills {
       font-family: "Roboto-Bold";
@@ -155,6 +155,12 @@ li a {
 }
 
 .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--skills-bg);
+  position: relative;
+  color: var(--text);
+  margin-bottom: 5px;
   &:before {
     content: "";
     position: absolute;
@@ -166,11 +172,7 @@ li a {
     background: #fff;
     border: 2px solid var(--skills-bg);
   }
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid var(--skills-bg);
-  position: relative;
-  color: var(--text);
+
   h4 {
     line-height: 18px;
     font-size: 18px;

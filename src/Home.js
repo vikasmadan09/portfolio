@@ -58,9 +58,9 @@ export const Home = () => {
       <div className="main-container" data-color-scheme={theme}>
         <Container>
           <Row>
-            <Col sm={10} xs={10} lg={10}>
+            <Col sm={10} xs={12} lg={10}>
               <Row>
-                <Col sm={8} xs={8} lg={8}>
+                <Col sm={8} xs={12} lg={8}>
                   <div>
                     <h1 className="heading-name">VIKAS MADAN</h1>
                     <div>
@@ -70,7 +70,7 @@ export const Home = () => {
                     </div>
                   </div>
                 </Col>
-                <Col sm={4} xs={4} lg={4}>
+                <Col sm={4} xs={12} lg={4}>
                   <div>
                     <ul className="p-0 text list-unstyled header-list contactInfo">
                       <li>
@@ -119,7 +119,7 @@ export const Home = () => {
                 </Col>
               </Row>
             </Col>
-            <Col sm={2} xs={2} lg={2}>
+            <Col sm={2} xs={12} lg={2}>
               <Row>
                 <div>
                   <img
