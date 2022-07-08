@@ -1,20 +1,191 @@
-@import '~bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/bootstrap.scss";
+@import "../App.css";
 
-
-.jumbotron{
-    max-height: 200px;
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url(../fonts/Oswald/Oswald-Regular.ttf);
 }
-.disp-img{
-    top: -52px;
-    right: 0px;
-    height: 175px;
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url(../fonts/Oswald/Oswald-Bold.ttf);
+}
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url(../fonts/Oswald/Oswald-Medium.ttf);
+}
+@font-face {
+  font-family: "Oswald-Light";
+  src: url(../fonts/Oswald/Oswald-Light.ttf);
+}
+@font-face {
+  font-family: "Oswald-SemiBold";
+  src: url(../fonts/Oswald/Oswald-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Oswald-ExtraLight";
+  src: url(../fonts/Oswald/Oswald-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url(../fonts/Roboto/Roboto-Thin.ttf);
 }
 
-.header-list{
-    li{
-        white-space: nowrap;
+body {
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+}
+
+p {
+  font-family: "Roboto-Regular";
+}
+
+ul li {
+  &::marker {
+    font-size: 18px;
+  }
+}
+
+.main-container {
+  padding: 0 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: var(--background);
+
+  .heading-name {
+    font-size: 64px;
+    font-family: "Oswald-Bold";
+    color: var(--text);
+  }
+  .headingWhoAmI {
+    color: var(--text);
+    font-size: 26px;
+    font-family: "Oswald-Regular";
+  }
+  .typedText {
+    color: var(--skills-bg);
+  }
+  .contactInfo {
+    font-family: "Oswald-Regular";
+    font-size: 18px;
+  }
+  .sections-container {
+    margin-left: 25px;
+    margin-right: 25px;
+    h3 {
+      font-family: "Oswald-Regular", sans-serif;
+      margin-bottom: 15px;
+      color: var(--text);
     }
-    svg{
-        margin: 0 5px 0 -10px;
+    p,
+    ul,
+    dl {
+      color: var(--text);
     }
+    .grad-info {
+      line-height: 0.5rem;
+    }
+    .skills {
+      font-family: "Roboto-Bold";
+      font-size: 12px;
+      .skill-badge {
+        background-color: var(--badge-bg);
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 3px 5px;
+      }
+    }
+  }
+}
+.disp-img {
+  height: 150px;
+}
+
+.themeContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1rem;
+  background-color: var(--background);
+  .themeToggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f3ebf6;
+    cursor: pointer;
+    .themeIcon {
+      transform: translate(8px, 8px);
+      font-size: 25px;
+    }
+
+    &:focus,
+    &:hover {
+      svg[data-icon="moon"] {
+        color: var(--skills-bg-light);
+      }
+      svg[data-icon="sun"] {
+        color: #ffc107;
+      }
+      background-color: var(--theme);
+    }
+  }
+}
+
+li a {
+  color: black;
+}
+
+.header-list {
+  li {
+    white-space: nowrap;
+  }
+  svg {
+    margin: 0 5px 0 -10px;
+  }
+}
+
+.resume-item {
+  &:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid var(--skills-bg);
+  }
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--skills-bg);
+  position: relative;
+  color: var(--text);
+  h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Roboto-Bold";
+    color: var(--skills-bg);
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 16px;
+    background: var(--badge-bg);
+    padding: 5px 15px;
+    display: inline-block;
+    font-family: "Oswald-SemiBold";
+    margin-bottom: 10px;
+  }
 }

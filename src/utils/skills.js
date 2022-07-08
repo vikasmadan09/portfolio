@@ -1,0 +1,31 @@
+export const skills = {
+  languages: [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "HTML5",
+    "CSS3",
+    "LESS",
+    "SASS",
+  ],
+  frameworks: [
+    "ReactJS",
+    "React-Native",
+    "Node.js",
+    "Express.js",
+    "Styleguidist",
+    "Material UI",
+    "AntD",
+    "Kendo-React",
+    "Bootstrap",
+  ],
+  others: [
+    "Jest",
+    "Testing Library",
+    "Enzyme",
+    "Github",
+    "BitBucket",
+    "Jenkins",
+    "Github Actions",
+    "Kong Gateway",
+  ],
+};
