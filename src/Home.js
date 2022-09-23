@@ -211,7 +211,7 @@ export const Home = () => {
                   <h4>Bronze Award</h4>
                   <h5>June 2022</h5>
                   <p>
-                    Awarded for the second time. Recognised for the showcasing
+                    Awarded for the second time. Recognised for, showcasing
                     Learning and Co-Creation Spirit. Quickly learnt and
                     implemented Micro Frontend Architecture for one of the
                     critical on-going project (published as FOSS on Github).
